@@ -17,8 +17,9 @@
             android:orientation="vertical">
         </LinearLayout>
         <ImageView
-            android:layout_width="265dp"
-            android:layout_height="265dp"
+            android:id="@+id/main-img"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
             android:layout_gravity="center"
             android:src="@drawable/drop1"
         />
@@ -33,9 +34,9 @@
             android:orientation="horizontal">
             <Button
                 android:id="@+id/main-hot-btn"
-                android:background="#ff0000"
+                android:background="@drawable/r_btn_hot"
                 android:layout_gravity="center"
-                android:layout_width="100dp"
+                android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="20dp"
                 android:text="HOT"
@@ -43,20 +44,45 @@
                 android:textColor="@color/white"
                 android:textSize="20dp" />
 
+            <Button
+                android:id="@+id/main-minus-btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/r_btn"
+                android:text="-"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
             <EditText
                 android:id="@+id/main-mlinput"
-                android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
-                android:textSize="20dp"
-                />
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/main-plus-btn"
+                android:background="@drawable/r_btn"
+                android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
 
             <Button
                 android:id="@+id/main-cold-btn"
-                android:background="#0000ff"
+                android:background="@drawable/r_btn_cold"
                 android:layout_gravity="center"
-                android:layout_width="100dp"
+                android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:layout_marginRight="20dp"
                 android:text="COLD"
@@ -66,14 +92,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </LinearLayout>
